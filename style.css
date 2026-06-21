@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(190, 187, 187);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 92vh;
+  width: 60vw;
+  background-color: white;
+  border: 2px solid rgb(172, 161, 161);
+  margin-top: 5vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container h1 {
+  font-size: 7vh;
+  padding-top: 20px;
+}
+.headImg {
+  height: 36px;
+}
+.msg {
+  font-size: 3vh;
+  color: rgb(105, 101, 101);
+  font-weight: 300;
+  margin-top: 6px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inp {
+  height: 8vh;
+  width: 43vw;
+  margin: 20px 5px;
+
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.input button {
+  height: 8vh;
+  width: 5vw;
+  background-color: rgb(34, 34, 163);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+.line {
+  height: 1px;
+  width: 50vw;
+  background-color: rgb(175, 168, 168);
+}
+.task {
+  height: 6vh;
+  display: flex;
+  gap: 8px;
+  width: 50vw;
+  justify-content: flex-start;
+  align-items: center;
+}
+.task p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: start;
+}
+#no {
+  border-radius: 50%;
+  height: 23px;
+  width: 20px;
+  text-align: center;
+  background-color: skyblue;
+  border: none;
+  color: navy;
+}
+.taskDiv {
+  height: 40vh;
+  width: 50vw;
+}
+.emptyState {
+  height: 40vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px dashed grey;
+}
+.notask {
+  height: 140px;
+}
+#heart {
+  height: 15px;
+}
+.task-list {
+  height: 40vh;
+  width: 50vw;
+  display: flex;
+
+  margin: 0px;
+  flex-direction: column;
+  max-height: 40vh;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+
+
+
+.tasks {
+  border: 2px solid rgb(175, 168, 168);
+  border-radius: 5px;
+  height: auto;
+  max-width: 48vw;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  margin: 5px;
+  word-break: break-all;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-wrap: break-word;
+}
+.checkbox {
+  height: 30px;
+  width: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.delete {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(236, 169, 182);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-left: auto;
+  right: 10px;
+  flex-shrink: 0;
+}
+
+.deleteIcon {
+  height: 25px;
+  width: 15px;
+}
+
+
+@media (max-width:800px){
+  
+  p{
+    text-align: center;
+  }
+
+}
+@media (max-width:600px){
+  .container h1, img{
+     font-size: 4vh;
+  }
+  .inp{
+    width: 35vw;
+    font-size: 15px;
+    word-break: break-all;
+    flex-wrap: wrap;
+  }
+  .input button{
+    width: 40px;
+    font-size: 10px;
+  }
+  .notask{
+    height: 70px;
+  }
+  .emptyState h3 {
+     font-size: 12px;
+  }
+  .emptyState p{
+    font-size: 8px;
+  }
+  .msg{
+    font-size: 12px;
+  }
+}
